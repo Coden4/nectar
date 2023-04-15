@@ -7,20 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		806D01512CA6EC702DDFB70F /* Pods_nectar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE429B072B3062EE110612EA /* Pods_nectar.framework */; };
+		E3340FCF29EB263800A7E1E0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3340FCE29EB263800A7E1E0 /* UIViewController.swift */; };
+		E3404A5429E7541500D0291E /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3404A5329E7541500D0291E /* Splash.storyboard */; };
+		E3404A5729E755D300D0291E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3404A5629E755D300D0291E /* Router.swift */; };
+		E3404A5A29E7562800D0291E /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3404A5929E7562800D0291E /* Storyboard.swift */; };
 		E388190329E74EE1004E9F79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E388190229E74EE1004E9F79 /* AppDelegate.swift */; };
 		E388190529E74EE1004E9F79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E388190429E74EE1004E9F79 /* SceneDelegate.swift */; };
-		E388190729E74EE1004E9F79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E388190629E74EE1004E9F79 /* ViewController.swift */; };
-		E388190A29E74EE1004E9F79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E388190829E74EE1004E9F79 /* Main.storyboard */; };
+		E388190729E74EE1004E9F79 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E388190629E74EE1004E9F79 /* SplashViewController.swift */; };
 		E388190C29E74EE3004E9F79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E388190B29E74EE3004E9F79 /* Assets.xcassets */; };
 		E388190F29E74EE3004E9F79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E388190D29E74EE3004E9F79 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2195E2D89F116C74D71219BA /* Pods-nectar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nectar.debug.xcconfig"; path = "Target Support Files/Pods-nectar/Pods-nectar.debug.xcconfig"; sourceTree = "<group>"; };
+		3759BBA1E509BC65B9E43C68 /* Pods-nectar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nectar.release.xcconfig"; path = "Target Support Files/Pods-nectar/Pods-nectar.release.xcconfig"; sourceTree = "<group>"; };
+		AE429B072B3062EE110612EA /* Pods_nectar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nectar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3340FCE29EB263800A7E1E0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		E3404A5329E7541500D0291E /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		E3404A5629E755D300D0291E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E3404A5929E7562800D0291E /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		E38818FF29E74EE1004E9F79 /* nectar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nectar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E388190229E74EE1004E9F79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E388190429E74EE1004E9F79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E388190629E74EE1004E9F79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E388190929E74EE1004E9F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E388190629E74EE1004E9F79 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E388190B29E74EE3004E9F79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E388190E29E74EE3004E9F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E388191029E74EE3004E9F79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,17 +41,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806D01512CA6EC702DDFB70F /* Pods_nectar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9546FD6356E8FF58871CF577 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2195E2D89F116C74D71219BA /* Pods-nectar.debug.xcconfig */,
+				3759BBA1E509BC65B9E43C68 /* Pods-nectar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E3340FCD29EB25F600A7E1E0 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E3340FCE29EB263800A7E1E0 /* UIViewController.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		E3404A5129E752C000D0291E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E388190229E74EE1004E9F79 /* AppDelegate.swift */,
+				E388190429E74EE1004E9F79 /* SceneDelegate.swift */,
+				E388190D29E74EE3004E9F79 /* LaunchScreen.storyboard */,
+				E388190B29E74EE3004E9F79 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E3404A5229E753C300D0291E /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				E388190629E74EE1004E9F79 /* SplashViewController.swift */,
+				E3404A5329E7541500D0291E /* Splash.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		E3404A5529E755C000D0291E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E3404A5629E755D300D0291E /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E3404A5829E7561400D0291E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E3404A5929E7562800D0291E /* Storyboard.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		E38818F629E74EE1004E9F79 = {
 			isa = PBXGroup;
 			children = (
 				E388190129E74EE1004E9F79 /* nectar */,
 				E388190029E74EE1004E9F79 /* Products */,
+				9546FD6356E8FF58871CF577 /* Pods */,
+				F7B70E2502C69A2BE26F7E90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +122,22 @@
 		E388190129E74EE1004E9F79 /* nectar */ = {
 			isa = PBXGroup;
 			children = (
-				E388190229E74EE1004E9F79 /* AppDelegate.swift */,
-				E388190429E74EE1004E9F79 /* SceneDelegate.swift */,
-				E388190629E74EE1004E9F79 /* ViewController.swift */,
-				E388190829E74EE1004E9F79 /* Main.storyboard */,
-				E388190B29E74EE3004E9F79 /* Assets.xcassets */,
-				E388190D29E74EE3004E9F79 /* LaunchScreen.storyboard */,
+				E3404A5229E753C300D0291E /* Splash */,
+				E3404A5829E7561400D0291E /* Constants */,
+				E3404A5529E755C000D0291E /* Router */,
+				E3340FCD29EB25F600A7E1E0 /* extensions */,
+				E3404A5129E752C000D0291E /* Resources */,
 				E388191029E74EE3004E9F79 /* Info.plist */,
 			);
 			path = nectar;
+			sourceTree = "<group>";
+		};
+		F7B70E2502C69A2BE26F7E90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE429B072B3062EE110612EA /* Pods_nectar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +147,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E388191329E74EE3004E9F79 /* Build configuration list for PBXNativeTarget "nectar" */;
 			buildPhases = (
+				5B73C000CF1998E0A59733B3 /* [CP] Check Pods Manifest.lock */,
 				E38818FB29E74EE1004E9F79 /* Sources */,
 				E38818FC29E74EE1004E9F79 /* Frameworks */,
 				E38818FD29E74EE1004E9F79 /* Resources */,
@@ -127,34 +201,54 @@
 			files = (
 				E388190F29E74EE3004E9F79 /* LaunchScreen.storyboard in Resources */,
 				E388190C29E74EE3004E9F79 /* Assets.xcassets in Resources */,
-				E388190A29E74EE1004E9F79 /* Main.storyboard in Resources */,
+				E3404A5429E7541500D0291E /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B73C000CF1998E0A59733B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nectar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E38818FB29E74EE1004E9F79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E388190729E74EE1004E9F79 /* ViewController.swift in Sources */,
+				E388190729E74EE1004E9F79 /* SplashViewController.swift in Sources */,
+				E3404A5A29E7562800D0291E /* Storyboard.swift in Sources */,
+				E3340FCF29EB263800A7E1E0 /* UIViewController.swift in Sources */,
 				E388190329E74EE1004E9F79 /* AppDelegate.swift in Sources */,
 				E388190529E74EE1004E9F79 /* SceneDelegate.swift in Sources */,
+				E3404A5729E755D300D0291E /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E388190829E74EE1004E9F79 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E388190929E74EE1004E9F79 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E388190D29E74EE3004E9F79 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +376,7 @@
 		};
 		E388191429E74EE3004E9F79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2195E2D89F116C74D71219BA /* Pods-nectar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,11 +385,12 @@
 				DEVELOPMENT_TEAM = JNR5HB3KH8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = nectar/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = nectar;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +406,7 @@
 		};
 		E388191529E74EE3004E9F79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3759BBA1E509BC65B9E43C68 /* Pods-nectar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,11 +415,12 @@
 				DEVELOPMENT_TEAM = JNR5HB3KH8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = nectar/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = nectar;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
