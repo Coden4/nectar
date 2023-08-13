@@ -11,5 +11,10 @@ class SplashViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Make required request or fetch preferences
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            Router.showOnboarding(from: self)
+        }
     }
 }

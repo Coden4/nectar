@@ -9,4 +9,6 @@ import Foundation
 
 enum Storybaord: String {
     case splash = "Splash"
+    case onboarding = "Onboarding"
+    case signin = "Signin"
 }

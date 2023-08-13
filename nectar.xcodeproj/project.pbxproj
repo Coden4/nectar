@@ -12,11 +12,16 @@
 		E3404A5429E7541500D0291E /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3404A5329E7541500D0291E /* Splash.storyboard */; };
 		E3404A5729E755D300D0291E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3404A5629E755D300D0291E /* Router.swift */; };
 		E3404A5A29E7562800D0291E /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3404A5929E7562800D0291E /* Storyboard.swift */; };
+		E35381C32A89338D008D150B /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35381C22A89338D008D150B /* SigninViewController.swift */; };
+		E35381C52A8933CA008D150B /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35381C42A8933CA008D150B /* Signin.storyboard */; };
+		E380CB8329EB3FED00026CCA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380CB8229EB3FED00026CCA /* OnboardingViewController.swift */; };
+		E380CB8529EB401200026CCA /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E380CB8429EB401200026CCA /* Onboarding.storyboard */; };
 		E388190329E74EE1004E9F79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E388190229E74EE1004E9F79 /* AppDelegate.swift */; };
 		E388190529E74EE1004E9F79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E388190429E74EE1004E9F79 /* SceneDelegate.swift */; };
 		E388190729E74EE1004E9F79 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E388190629E74EE1004E9F79 /* SplashViewController.swift */; };
 		E388190C29E74EE3004E9F79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E388190B29E74EE3004E9F79 /* Assets.xcassets */; };
 		E388190F29E74EE3004E9F79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E388190D29E74EE3004E9F79 /* LaunchScreen.storyboard */; };
+		E3FE54842A8371FF0017F487 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE54832A8371FF0017F487 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,10 @@
 		E3404A5329E7541500D0291E /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		E3404A5629E755D300D0291E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		E3404A5929E7562800D0291E /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		E35381C22A89338D008D150B /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		E35381C42A8933CA008D150B /* Signin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
+		E380CB8229EB3FED00026CCA /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		E380CB8429EB401200026CCA /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		E38818FF29E74EE1004E9F79 /* nectar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nectar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E388190229E74EE1004E9F79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E388190429E74EE1004E9F79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +43,7 @@
 		E388190B29E74EE3004E9F79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E388190E29E74EE3004E9F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E388191029E74EE3004E9F79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3FE54832A8371FF0017F487 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				E3340FCE29EB263800A7E1E0 /* UIViewController.swift */,
+				E3FE54832A8371FF0017F487 /* UIColor.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -101,6 +112,32 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		E35381C02A89335D008D150B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E35381C12A893369008D150B /* Signin */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E35381C12A893369008D150B /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				E35381C22A89338D008D150B /* SigninViewController.swift */,
+				E35381C42A8933CA008D150B /* Signin.storyboard */,
+			);
+			path = Signin;
+			sourceTree = "<group>";
+		};
+		E380CB8129EB3FD700026CCA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E380CB8229EB3FED00026CCA /* OnboardingViewController.swift */,
+				E380CB8429EB401200026CCA /* Onboarding.storyboard */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		E38818F629E74EE1004E9F79 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				E3404A5229E753C300D0291E /* Splash */,
+				E380CB8129EB3FD700026CCA /* Onboarding */,
+				E35381C02A89335D008D150B /* Authentication */,
 				E3404A5829E7561400D0291E /* Constants */,
 				E3404A5529E755C000D0291E /* Router */,
 				E3340FCD29EB25F600A7E1E0 /* extensions */,
@@ -199,9 +238,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35381C52A8933CA008D150B /* Signin.storyboard in Resources */,
 				E388190F29E74EE3004E9F79 /* LaunchScreen.storyboard in Resources */,
 				E388190C29E74EE3004E9F79 /* Assets.xcassets in Resources */,
 				E3404A5429E7541500D0291E /* Splash.storyboard in Resources */,
+				E380CB8529EB401200026CCA /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,8 +282,11 @@
 				E3404A5A29E7562800D0291E /* Storyboard.swift in Sources */,
 				E3340FCF29EB263800A7E1E0 /* UIViewController.swift in Sources */,
 				E388190329E74EE1004E9F79 /* AppDelegate.swift in Sources */,
+				E380CB8329EB3FED00026CCA /* OnboardingViewController.swift in Sources */,
+				E3FE54842A8371FF0017F487 /* UIColor.swift in Sources */,
 				E388190529E74EE1004E9F79 /* SceneDelegate.swift in Sources */,
 				E3404A5729E755D300D0291E /* Router.swift in Sources */,
+				E35381C32A89338D008D150B /* SigninViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="Y6W-OH-hqX" customClass="OnboardingViewController" customModule="nectar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding" translatesAutoresizingMaskIntoConstraints="NO" id="w9r-Ra-XHM">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carrot" translatesAutoresizingMaskIntoConstraints="NO" id="hRH-jK-N0G">
+                                <rect key="frame" x="171" y="402" width="48" height="56"/>
+                                <color key="tintColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="QP2-HF-9wp"/>
+                                    <constraint firstAttribute="width" constant="48" id="RuW-lc-je8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbm-OA-j07">
+                                <rect key="frame" x="30" y="686" width="330" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="IqG-zq-wuP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Started">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="PrimaryColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" name="White"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didGetStartedTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GGQ-5X-IeF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ger your groceries in as fast as one hour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s65-Ze-b4F">
+                                <rect key="frame" x="30" y="626.66666666666663" width="330" height="19.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ca-ko-L3x">
+                                <rect key="frame" x="30" y="494.00000000000006" width="330" height="114.66666666666669"/>
+                                <string key="text">Welcome 
+to our store</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pbm-OA-j07" firstAttribute="top" secondItem="s65-Ze-b4F" secondAttribute="bottom" constant="40" id="0sC-cZ-DQB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="pbm-OA-j07" secondAttribute="bottom" constant="56" id="6PQ-WC-ncj"/>
+                            <constraint firstItem="s65-Ze-b4F" firstAttribute="top" secondItem="6Ca-ko-L3x" secondAttribute="bottom" constant="18" id="7l8-a3-LV7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6Ca-ko-L3x" secondAttribute="trailing" constant="30" id="Gh1-dr-AWM"/>
+                            <constraint firstAttribute="trailing" secondItem="w9r-Ra-XHM" secondAttribute="trailing" id="LGW-Ar-6k6"/>
+                            <constraint firstItem="pbm-OA-j07" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="Nxl-0E-dCE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="s65-Ze-b4F" secondAttribute="trailing" constant="30" id="RML-ai-kz3"/>
+                            <constraint firstItem="6Ca-ko-L3x" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="TBy-Ih-3wr"/>
+                            <constraint firstItem="w9r-Ra-XHM" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="bgW-bG-Z0f"/>
+                            <constraint firstAttribute="bottom" secondItem="w9r-Ra-XHM" secondAttribute="bottom" id="buw-3i-tf2"/>
+                            <constraint firstItem="s65-Ze-b4F" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="ddt-hU-gV8"/>
+                            <constraint firstItem="6Ca-ko-L3x" firstAttribute="top" secondItem="hRH-jK-N0G" secondAttribute="bottom" constant="36" id="fC8-Yn-raO"/>
+                            <constraint firstItem="hRH-jK-N0G" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="fSs-w2-5D1"/>
+                            <constraint firstItem="w9r-Ra-XHM" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="r5l-kl-l3r"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pbm-OA-j07" secondAttribute="trailing" constant="30" id="rvf-fA-Bgy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="pbm-OA-j07" id="lex-nf-uUR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.846153846153845" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="carrot" width="56" height="65"/>
+        <image name="onboarding" width="414.33334350585938" height="896.33331298828125"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.32499998807907104" green="0.6940000057220459" blue="0.45899999141693115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
